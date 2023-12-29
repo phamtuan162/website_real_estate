@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Real Estate Website</title>
+    <link rel="shortcut icon" href="./assets/images/logotitile.jpg">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Base -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- header section starts-->
+    <header class="header">
+        <nav class="navbar nav-1">
+            <section class="flex">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logotitile.jpg" alt="">
+                    MyHome
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="post_property.html">
+                            Post Property
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <nav class="navbar nav-2">
+            <section class="flex">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div class="menu ">
+                    <ul>
+                        <li><a href="#">My listings<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="post_property.html">Post property</a></li>
+                                <li><a href="my_listings.html">My listings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Options<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="search.html">Filter search</a></li>
+                                <li><a href="listings.html">All listings</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Help
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html#faq">FAQ</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <a href="saved.html">
+                            Saved
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Account
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="login.html">Login now</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Register new</a>
+                            </li>
+                            <li><a href="update.html">Update profile</a></li>
+                            <!-- <li><a href="#" onclick="return confirm('Logout from this website?');">Logout</a> -->
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </section>
+        </nav>
+
+    </header>
+    <!-- header section ends-->
+
+    <!-- Home section starts -->
+    <div class="home">
+        <section class="center">
+            <form action="search.html" method="post">
+                <div class="box">
+                    <h3>Find your perfect home</h3>
+                    <p>Enter location <span>*</span></p>
+                    <input type="text" name="location" required maxlength="50" placeholder="Enter ciyt name"
+                        class="input">
+                </div>
+                <div class="flex">
+                    <div class="box">
+                        <p>Property type <span>*</span></p>
+                        <select name="type" class="input" required>
+                            <option value="flat">Flat</option>
+                            <option value="house">House</option>
+                            <option value="shop">Shop</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <p>How many BHK <span>*</span></p>
+                        <select name="bhk" class="input" required>
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4 BHK</option>
+                            <option value="5">5 BHK</option>
+                            <option value="6">6 BHK</option>
+                            <option value="7">7 BHK</option>
+                            <option value="8">8 BHK</option>
+                            <option value="9">9 BHK</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <p>Maximum budget <span>*</span></p>
+                        <select name="minimum" class="input" required>
+                            <option value="5000000">5 lac</option>
+                            <option value="1000000">10 lac</option>
+                            <option value="2000000">20 lac</option>
+                            <option value="3000000">30 lac</option>
+                            <option value="4000000">40 lac</option>
+                            <option value="4000000">40 lac</option>
+                            <option value="5000000">50 lac</option>
+                            <option value="6000000">60 lac</option>
+                            <option value="7000000">70 lac</option>
+                            <option value="8000000">80 lac</option>
+                            <option value="9000000">90 lac</option>
+                            <option value="10000000">1 Cr</option>
+                            <option value="20000000">2 Cr</option>
+                            <option value="30000000">3 Cr</option>
+                            <option value="40000000">4 Cr</option>
+                            <option value="50000000">5 Cr</option>
+                            <option value="60000000">6 Cr</option>
+                            <option value="70000000">7 Cr</option>
+                            <option value="80000000">8 Cr</option>
+                            <option value="90000000">9 Cr</option>
+                            <option value="100000000">10 Cr</option>
+                            <option value="150000000">15 Cr</option>
+                            <option value="200000000">20 Cr</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <p>Maximum budget <span>*</span></p>
+                        <select name="maximum" class="input" required>
+                            <option value="5000000">5 lac</option>
+                            <option value="1000000">10 lac</option>
+                            <option value="2000000">20 lac</option>
+                            <option value="3000000">30 lac</option>
+                            <option value="4000000">40 lac</option>
+                            <option value="4000000">40 lac</option>
+                            <option value="5000000">50 lac</option>
+                            <option value="6000000">60 lac</option>
+                            <option value="7000000">70 lac</option>
+                            <option value="8000000">80 lac</option>
+                            <option value="9000000">90 lac</option>
+                            <option value="10000000">1 Cr</option>
+                            <option value="20000000">2 Cr</option>
+                            <option value="30000000">3 Cr</option>
+                            <option value="40000000">4 Cr</option>
+                            <option value="50000000">5 Cr</option>
+                            <option value="60000000">6 Cr</option>
+                            <option value="70000000">7 Cr</option>
+                            <option value="80000000">8 Cr</option>
+                            <option value="90000000">9 Cr</option>
+                            <option value="100000000">10 Cr</option>
+                            <option value="150000000">15 Cr</option>
+                            <option value="200000000">20 Cr</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="search.html" class="btn">Search Property</a>
+                <!-- <input type="submit" value="search property" name="search" class="btn"> -->
+            </form>
+        </section>
+    </div>
+    <!-- Home section ends -->
+
+    <!-- Services section starts -->
+    <section class="services">
+
+        <h1 class="heading">Our services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./assets/images/icon-1.png" alt="">
+                <h3>Buy house</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+            </div>
+
+            <div class="box">
+                <img src="./assets/images/icon-2.png" alt="">
+                <h3>Rent house</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+            </div>
+
+            <div class="box">
+                <img src="./assets/images/icon-3.png" alt="">
+                <h3>Sell house</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+            </div>
+
+            <div class="box">
+                <img src="./assets/images/icon-4.png" alt="">
+                <h3>Flats and buildings</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+            </div>
+
+            <div class="box">
+                <img src="./assets/images/icon-5.png" alt="">
+                <h3>Shops and malls</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+            </div>
+
+            <div class="box">
+                <img src="./assets/images/icon-6.png" alt="">
+                <h3>24/7 service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Services section starts -->
+
+    <!-- Listings section starts -->
+
+    <section class="listings">
+
+        <h1 class="heading">Latest listings</h1>
+
+        <div class="box-container">
+
+
+            <form action="" method="POST">
+                <div class="box">
+                    <input type="hidden" name="property_id">
+
+                    <!-- <button type="submit" name="save" class="save"><i
+                            class="fas fa-heart"></i><span>Saved</span></button> -->
+
+                    <button type="submit" name="save" class="save"><i
+                            class="far fa-heart"></i><span>Save</span></button>
+
+                    <div class="thumb">
+                        <p class="total-images"><i class="far fa-image"></i><span>
+                                5
+                            </span></p>
+                        <img src="./assets/images/house-img-1.webp" alt="">
+                    </div>
+                    <div class="admin">
+                        <h3>Đ</h3>
+                        <div>
+                            <p>Mr.Đức</p>
+                            <span>13-04-2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="price"><i class="fas fa-indian-rupee-sign"></i><span>12000</span></div>
+                    <h3 class="name">House for rent in HaDong</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i><span>Quận Hà Đông, Thành phố Hà Nội</span>
+                    </p>
+                    <div class="flex">
+                        <p><i class="fas fa-house"></i><span>House</span></p>
+                        <p><i class="fas fa-tag"></i><span>Rent</span></p>
+                        <p><i class="fas fa-bed"></i><span>1 BHK</span></p>
+                        <p><i class="fas fa-trowel"></i><span>Ready to move</span></p>
+                        <p><i class="fas fa-couch"></i><span>Furnished</span></p>
+                        <p><i class="fas fa-maximize"></i><span>685sqft</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_property.html" class="btn">View property</a>
+                        <input type="submit" value="Send enquiry" name="send" class="btn">
+                    </div>
+                </div>
+            </form>
+
+            <form action="" method="POST">
+                <div class="box">
+                    <input type="hidden" name="property_id">
+
+                    <!-- <button type="submit" name="save" class="save"><i
+                            class="fas fa-heart"></i><span>Saved</span></button> -->
+
+                    <button type="submit" name="save" class="save"><i
+                            class="far fa-heart"></i><span>Save</span></button>
+
+                    <div class="thumb">
+                        <p class="total-images"><i class="far fa-image"></i><span>
+                                5
+                            </span></p>
+                        <img src="./assets/images/house-img-2.webp" alt="">
+                    </div>
+                    <div class="admin">
+                        <h3>M</h3>
+                        <div>
+                            <p>Ms.Minh</p>
+                            <span>13-04-2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="price"><i class="fas fa-indian-rupee-sign"></i><span>12000</span></div>
+                    <h3 class="name">House for rent in Cau Giay</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i><span>Quận Cầu Giấy, Thành phố Hà
+                            Nội</span>
+                    </p>
+                    <div class="flex">
+                        <p><i class="fas fa-house"></i><span>House</span></p>
+                        <p><i class="fas fa-tag"></i><span>Rent</span></p>
+                        <p><i class="fas fa-bed"></i><span>1 BHK</span></p>
+                        <p><i class="fas fa-trowel"></i><span>Ready to move</span></p>
+                        <p><i class="fas fa-couch"></i><span>Furnished</span></p>
+                        <p><i class="fas fa-maximize"></i><span>685sqft</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_property.html" class="btn">View property</a>
+                        <input type="submit" value="Send enquiry" name="send" class="btn">
+                    </div>
+                </div>
+            </form>
+
+            <form action="" method="POST">
+                <div class="box">
+                    <input type="hidden" name="property_id">
+
+                    <!-- <button type="submit" name="save" class="save"><i
+                            class="fas fa-heart"></i><span>Saved</span></button> -->
+
+                    <button type="submit" name="save" class="save"><i
+                            class="far fa-heart"></i><span>Save</span></button>
+
+                    <div class="thumb">
+                        <p class="total-images"><i class="far fa-image"></i><span>
+                                5
+                            </span></p>
+                        <img src="./assets/images/house-img-4.webp" alt="">
+                    </div>
+                    <div class="admin">
+                        <h3>V</h3>
+                        <div>
+                            <p>Mr.Vũ</p>
+                            <span>13-04-2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="price"><i class="fas fa-indian-rupee-sign"></i><span>12000</span></div>
+                    <h3 class="name">House for rent in Nguyen Khang</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i><span>Đường Nguyễn Khang,Phường Yên
+                            Hòa,Quận Cầu Giấy, Thành phố Hà Nội</span>
+                    </p>
+                    <div class="flex">
+                        <p><i class="fas fa-house"></i><span>House</span></p>
+                        <p><i class="fas fa-tag"></i><span>Rent</span></p>
+                        <p><i class="fas fa-bed"></i><span>1 BHK</span></p>
+                        <p><i class="fas fa-trowel"></i><span>Ready to move</span></p>
+                        <p><i class="fas fa-couch"></i><span>Furnished</span></p>
+                        <p><i class="fas fa-maximize"></i><span>685sqft</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_property.html" class="btn">View property</a>
+                        <input type="submit" value="Send enquiry" name="send" class="btn">
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align:center;">
+            <a href="listings.html" class="inline-btn">View all</a>
+        </div>
+
+    </section>
+
+    <!-- listings section ends -->
+
+    <!-- Footer section starts -->
+    <footer class="footer">
+        <section class="flex">
+
+            <div class="box">
+                <img src="./assets/images/logo.jpg" alt="real estate">
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur neque reiciendis nisi
+                    necessitatibus laudantium quis quas, esse praesentium ad maiores.</p>
+                <div class="social">
+                    <a class="social-link" href="https://www.facebo">
+                        <i class="icon fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-link" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-link" href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="social-link" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-link" href="https://github.com/phamtuan162">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-link" href="https://www.youtube.com/channel/UCzAJZl6ufm5_bph7h6g9D3w">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>
+                    Company
+                </h3>
+                <a href="home.html"><img src="./assets/images/right-arrow.png" alt=""><span>Home</span> </a>
+                <a href="about.html"><img src="./assets/images/right-arrow.png" alt=""><span>About</span></a>
+                <a href="Contact.html"><img src="./assets/images/right-arrow.png" alt=""><span>Contact</span></a>
+                <a href="listings.html"><img src="./assets/images/right-arrow.png" alt=""><span>All listings</span></a>
+                <a href="#"><img src="./assets/images/right-arrow.png" alt=""><span>Saved Properties</span></a>
+            </div>
+            <div class="box">
+                <h3>Address</h3>
+                <a href="tel:0397822119">
+                    <i class="fas fa-phone"></i>
+                    <span>0397822119</span>
+                </a>
+                <a href="mailto:tnpham352@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>tnpham352@gmail.com</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Đường Nguyễn Khang,Phường Yên Hòa,Quận Cầu Giấy,Thành phố Hà Nội</span>
+                </a>
+            </div>
+
+        </section>
+        <div class="credit">Copyright @ 2023 by <span>Phạm Minh Tuấn</span> | All rights reserved</div>
+    </footer>
+    <!-- Footer section ends -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post property</title>
+    <link rel="shortcut icon" href="./assets/images/logotitile.jpg">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Base -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- header section starts-->
+    <header class="header">
+        <nav class="navbar nav-1">
+            <section class="flex">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logotitile.jpg" alt="">
+                    MyHome
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="post_property.html">
+                            Post Property
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <nav class="navbar nav-2">
+            <section class="flex">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div class="menu ">
+                    <ul>
+                        <li><a href="#">My listings<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="post_property.html">Post property</a></li>
+                                <li><a href="my_listings.html">My listings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Options<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="search.html">Filter search</a></li>
+                                <li><a href="listings.html">All listings</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Help
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html#faq">FAQ</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <a href="saved.html">
+                            Saved
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Account
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Register</a>
+                            </li>
+                            <li><a href="update.html">Update profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+    </header>
+    <!-- header section ends-->
+
+    <!-- Form post-property starts -->
+    <section class="property-form">
+
+        <form action="" method="POST">
+            <h3>Property details</h3>
+            <div class="box">
+                <p>Property name <span>*</span></p>
+                <input type="text" name="property_name" required maxlength="50" placeholder="Enter property name"
+                    class="input">
+            </div>
+            <div class="flex">
+                <div class="box">
+                    <p>Property price <span>*</span></p>
+                    <input type="number" name="price" required min="0" max="9999999999" maxlength="10"
+                        placeholder="Enter property price" class="input">
+                </div>
+                <div class="box">
+                    <p>Deposite amount <span>*</span></p>
+                    <input type="number" name="deposite" required min="0" max="9999999999" maxlength="10"
+                        placeholder="Enter deposite amount" class="input">
+                </div>
+                <div class="box">
+                    <p>Property address <span>*</span></p>
+                    <input type="text" name="address" required maxlength="100" placeholder="enter property full address"
+                        class="input">
+                </div>
+                <div class="box">
+                    <p>Offer type <span>*</span></p>
+                    <select name="offer" required class="input">
+                        <option value="sale">Sale</option>
+                        <option value="resale">Resale</option>
+                        <option value="rent">Rent</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Property type <span>*</span></p>
+                    <select name="type" required class="input">
+                        <option value="flat">Flat</option>
+                        <option value="house">House</option>
+                        <option value="shop">Shop</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Property status <span>*</span></p>
+                    <select name="status" required class="input">
+                        <option value="ready to move">Ready to move</option>
+                        <option value="under construction">Under construction</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Furnished status <span>*</span></p>
+                    <select name="furnished" required class="input">
+                        <option value="furnished">Furnished</option>
+                        <option value="semi-furnished">Semi-furnished</option>
+                        <option value="unfurnished">Unfurnished</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>How many BHK <span>*</span></p>
+                    <select name="bhk" required class="input">
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="4">4 BHK</option>
+                        <option value="5">5 BHK</option>
+                        <option value="6">6 BHK</option>
+                        <option value="7">7 BHK</option>
+                        <option value="8">8 BHK</option>
+                        <option value="9">9 BHK</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>How many bedrooms <span>*</span></p>
+                    <select name="bedroom" required class="input">
+                        <option value="0">0 bedroom</option>
+                        <option value="1" selected>1 bedroom</option>
+                        <option value="2">2 bedroom</option>
+                        <option value="3">3 bedroom</option>
+                        <option value="4">4 bedroom</option>
+                        <option value="5">5 bedroom</option>
+                        <option value="6">6 bedroom</option>
+                        <option value="7">7 bedroom</option>
+                        <option value="8">8 bedroom</option>
+                        <option value="9">9 bedroom</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>How many bathrooms <span>*</span></p>
+                    <select name="bathroom" required class="input">
+                        <option value="1">1 bathroom</option>
+                        <option value="2">2 bathroom</option>
+                        <option value="3">3 bathroom</option>
+                        <option value="4">4 bathroom</option>
+                        <option value="5">5 bathroom</option>
+                        <option value="6">6 bathroom</option>
+                        <option value="7">7 bathroom</option>
+                        <option value="8">8 bathroom</option>
+                        <option value="9">9 bathroom</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>How many balconys <span>*</span></p>
+                    <select name="balcony" required class="input">
+                        <option value="0">0 balcony</option>
+                        <option value="1">1 balcony</option>
+                        <option value="2">2 balcony</option>
+                        <option value="3">3 balcony</option>
+                        <option value="4">4 balcony</option>
+                        <option value="5">5 balcony</option>
+                        <option value="6">6 balcony</option>
+                        <option value="7">7 balcony</option>
+                        <option value="8">8 balcony</option>
+                        <option value="9">9 balcony</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Carpet area <span>*</span></p>
+                    <input type="number" name="carpet" required min="1" max="9999999999" maxlength="10"
+                        placeholder="How many squarefits?" class="input">
+                </div>
+                <div class="box">
+                    <p>Property age <span>*</span></p>
+                    <input type="number" name="age" required min="0" max="99" maxlength="2"
+                        placeholder="How old is property?" class="input">
+                </div>
+                <div class="box">
+                    <p>Total floors <span>*</span></p>
+                    <input type="number" name="total_floors" required min="0" max="99" maxlength="2"
+                        placeholder="How floors available?" class="input">
+                </div>
+                <div class="box">
+                    <p>Floor room <span>*</span></p>
+                    <input type="number" name="room_floor" required min="0" max="99" maxlength="2"
+                        placeholder="Property floor number" class="input">
+                </div>
+                <div class="box">
+                    <p>Loan <span>*</span></p>
+                    <select name="loan" required class="input">
+                        <option value="available">Available</option>
+                        <option value="not available">Not available</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <p>Property description <span>*</span></p>
+                <textarea name="description" maxlength="1000" class="input" required cols="30" rows="10"
+                    placeholder="Write about property..."></textarea>
+            </div>
+            <div class="checkbox">
+                <div class="box">
+                    <p><input type="checkbox" name="lift" value="yes" />Lifts</p>
+                    <p><input type="checkbox" name="security_guard" value="yes" />Security guard</p>
+                    <p><input type="checkbox" name="play_ground" value="yes" />Play ground</p>
+                    <p><input type="checkbox" name="garden" value="yes" />Garden</p>
+                    <p><input type="checkbox" name="water_supply" value="yes" />Water supply</p>
+                    <p><input type="checkbox" name="power_backup" value="yes" />Power backup</p>
+                </div>
+                <div class="box">
+                    <p><input type="checkbox" name="parking_area" value="yes" />Parking area</p>
+                    <p><input type="checkbox" name="gym" value="yes" />Gym</p>
+                    <p><input type="checkbox" name="shopping_mall" value="yes" />Shopping_mall</p>
+                    <p><input type="checkbox" name="hospital" value="yes" />Hospital</p>
+                    <p><input type="checkbox" name="school" value="yes" />School</p>
+                    <p><input type="checkbox" name="market_area" value="yes" />Market area</p>
+                </div>
+            </div>
+            <div class="box">
+                <p>Image 01 <span>*</span></p>
+                <input type="file" name="image_01" class="input" accept="image/*" required>
+            </div>
+            <div class="flex">
+                <div class="box">
+                    <p>Image 02</p>
+                    <input type="file" name="image_02" class="input" accept="image/*">
+                </div>
+                <div class="box">
+                    <p>Image 03</p>
+                    <input type="file" name="image_03" class="input" accept="image/*">
+                </div>
+                <div class="box">
+                    <p>Image 04</p>
+                    <input type="file" name="image_04" class="input" accept="image/*">
+                </div>
+                <div class="box">
+                    <p>Image 05</p>
+                    <input type="file" name="image_05" class="input" accept="image/*">
+                </div>
+            </div>
+            <input type="submit" value="post property" class="btn" name="post">
+        </form>
+
+    </section>
+    <!-- Form post-property ends -->
+
+
+    <!-- Footer section starts -->
+    <footer class="footer">
+        <section class="flex">
+
+            <div class="box">
+                <img src="./assets/images/logo.jpg" alt="real estate">
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur neque reiciendis nisi
+                    necessitatibus laudantium quis quas, esse praesentium ad maiores.</p>
+                <div class="social">
+                    <a class="social-link" href="https://www.facebo">
+                        <i class="icon fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-link" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-link" href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="social-link" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-link" href="https://github.com/phamtuan162">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-link" href="https://www.youtube.com/channel/UCzAJZl6ufm5_bph7h6g9D3w">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>
+                    Company
+                </h3>
+                <a href="home.html"><img src="./assets/images/right-arrow.png" alt=""><span>Home</span> </a>
+                <a href="about.html"><img src="./assets/images/right-arrow.png" alt=""><span>About</span></a>
+                <a href="Contact.html"><img src="./assets/images/right-arrow.png" alt=""><span>Contact</span></a>
+                <a href="listings.html"><img src="./assets/images/right-arrow.png" alt=""><span>All listings</span></a>
+                <a href="#"><img src="./assets/images/right-arrow.png" alt=""><span>Saved Properties</span></a>
+            </div>
+            <div class="box">
+                <h3>Address</h3>
+                <a href="tel:0397822119">
+                    <i class="fas fa-phone"></i>
+                    <span>0397822119</span>
+                </a>
+                <a href="mailto:tnpham352@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>tnpham352@gmail.com</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Đường Nguyễn Khang,Phường Yên Hòa,Quận Cầu Giấy,Thành phố Hà Nội</span>
+                </a>
+            </div>
+
+        </section>
+        <div class="credit">Copyright @ 2023 by <span>Phạm Minh Tuấn</span> | All rights reserved</div>
+    </footer>
+    <!-- Footer section ends -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

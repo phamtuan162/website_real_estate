@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+    <link rel="shortcut icon" href="./assets/images/logotitile.jpg">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Base -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header section starts-->
+    <header class="header">
+        <nav class="navbar nav-1">
+            <section class="flex">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logotitile.jpg" alt="">
+                    MyHome
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="post_property.html">
+                            Post Property
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <nav class="navbar nav-2">
+            <section class="flex">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div class="menu ">
+                    <ul>
+                        <li><a href="#">My listings<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="post_property.html">Post property</a></li>
+                                <li><a href="my_listings.html">My listings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Options<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="search.html">Filter search</a></li>
+                                <li><a href="listings.html">All listings</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Help
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html#faq">FAQ</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <a href="saved.html">
+                            Saved
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Account
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Register</a>
+                            </li>
+                            <li><a href="update.html">Update profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+    </header>
+    <!-- Header section ends-->
+    <!-- Requests section starts-->
+    <section class="requests">
+
+        <h1 class="heading">All requests</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <p>Name : <span>Phạm Minh Tuấn</span></p>
+                <p>Number : <a href="tel:0397822119"></a>0397822119</p>
+                <p>Email : <a href="mailto:tnpham352@gmail.com">tnpham352@gmail.com</a></p>
+                <p>Enquiry for : <span>Mr.Đức</span></p>
+                <form action="" method="POST">
+                    <input type="hidden" name="request_id" value=">">
+                    <input type="submit" value="delete request" class="btn"
+                        onclick="return confirm('remove this request?');" name="delete">
+                    <a href="view_property.html" class="btn">View property</a>
+                </form>
+            </div>
+            <!-- <p class="empty">You have no requests!</p> -->
+
+
+        </div>
+
+    </section>
+
+    <!-- Requets section ends-->
+
+
+
+    <!-- Footer section starts -->
+    <footer class="footer">
+        <section class="flex">
+
+            <div class="box">
+                <img src="./assets/images/logo.jpg" alt="real estate">
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur neque reiciendis nisi
+                    necessitatibus laudantium quis quas, esse praesentium ad maiores.</p>
+                <div class="social">
+                    <a class="social-link" href="https://www.facebo">
+                        <i class="icon fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-link" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-link" href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="social-link" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-link" href="https://github.com/phamtuan162">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-link" href="https://www.youtube.com/channel/UCzAJZl6ufm5_bph7h6g9D3w">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>
+                    Company
+                </h3>
+                <a href="home.html"><img src="./assets/images/right-arrow.png" alt=""><span>Home</span> </a>
+                <a href="about.html"><img src="./assets/images/right-arrow.png" alt=""><span>About</span></a>
+                <a href="Contact.html"><img src="./assets/images/right-arrow.png" alt=""><span>Contact</span></a>
+                <a href="listings.html"><img src="./assets/images/right-arrow.png" alt=""><span>All listings</span></a>
+                <a href="#"><img src="./assets/images/right-arrow.png" alt=""><span>Saved Properties</span></a>
+            </div>
+            <div class="box">
+                <h3>Address</h3>
+                <a href="tel:0397822119">
+                    <i class="fas fa-phone"></i>
+                    <span>0397822119</span>
+                </a>
+                <a href="mailto:tnpham352@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>tnpham352@gmail.com</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Đường Nguyễn Khang,Phường Yên Hòa,Quận Cầu Giấy,Thành phố Hà Nội</span>
+                </a>
+            </div>
+
+        </section>
+        <div class="credit">Copyright @ 2023 by <span>Phạm Minh Tuấn</span> | All rights reserved</div>
+    </footer>
+    <!-- Footer section ends -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

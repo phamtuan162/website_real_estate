@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admins</title>
+    <link rel="shortcut icon" href="./assets/images/logotitile.jpg">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Base -->
+    <link rel="stylesheet" href="./assets/css/admin_base.css" />
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./assets/css/admin_main.css" />
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" href="./assets/css/admin_reponsive.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body style="padding-left: 0;">
+
+    <!-- login section starts  -->
+
+    <section class="form-container" style="min-height: 100vh;text-aligh:center;">
+
+        <form action="" method="POST">
+            <h3>Welcome back!</h3>
+            <p>Default name = <span>Admin</span> & Password = <span>111</span></p>
+            <input type="text" name="name" placeholder="Enter username" maxlength="20" class="box" required
+                oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" name="pass" placeholder="Enter password" maxlength="20" class="box" required
+                oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="submit" value="login now" name="submit" class="btn">
+        </form>
+
+    </section>
+
+    <!-- login section ends -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .view-property .details .info p {
+    flex-basis: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar .menu {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    transition: 0.2s linear;
+    z-index: 4;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar .menu.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar .menu ul {
+    display: block;
+  }
+  .header .navbar .menu ul li {
+    width: 100%;
+    position: relative;
+  }
+  .header .navbar .menu ul li ul {
+    width: 100%;
+    position: relative;
+  }
+  .header .navbar .menu ul li ul li a {
+    padding-left: 4rem;
+    background-color: var(--black);
+    color: var(--white);
+  }
+  .footer .flex .box:nth-child(2) {
+    padding: 0;
+  }
+  .view-property .details .images-container img {
+    height: 30rem;
+    width: 40rem;
+  }
+  .view-property .details .info p {
+    flex-basis: 40%;
+  }
+  #filter-btn {
+    display: inline-block;
+  }
+
+  .filters {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    background-color: var(--white);
+    z-index: 1100;
+    padding: 0;
+    display: none;
+  }
+
+  .filters.active {
+    display: block;
+  }
+
+  .filters form {
+    box-shadow: none;
+  }
+
+  .filters form #close-filter {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .header .navbar .flex .logo {
+    font-size: 1.8rem;
+  }
+  .footer .flex .box:nth-child(2) {
+    padding: 0;
+  }
+  .home .center form .flex {
+    gap: 0;
+  }
+  /* Listings */
+  .listings .box-container {
+    grid-template-columns: 1fr;
+  }
+  .listings .box-container form .box .thumb {
+    height: 20rem;
+  }
+  /* Reviews */
+  .reviews .box-container {
+    grid-template-columns: 1fr;
+  }
+  /* View-property */
+  .view-property .details .info p {
+    flex-basis: 100%;
+  }
+  .view-property .details .images-container img {
+    height: 20rem;
+    width: 30rem;
+  }
+  .flex-btn {
+    flex-flow: column;
+    gap: 0;
+  }
+  /* DashBoard */
+  .dashboard .box-container {
+    grid-template-columns: 1fr;
+  }
+  .property-form form .box .image {
+    height: auto;
+  }
+}
